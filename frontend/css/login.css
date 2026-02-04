@@ -1,0 +1,110 @@
+/* Parallax Background */
+.login-parallax-bg {
+    background-image: url('https://images.unsplash.com/photo-1682364853446-db043f643207?auto=format&fit=crop&w=1400&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Overlay */
+#admin-login .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+/* Card Styling - Transparent + Animation */
+#admin-login .card {
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: floatRotate 3s ease-in-out infinite alternate;
+}
+
+/* Hover effect to pause animation and pop slightly */
+#admin-login .card:hover {
+    transform: translateY(-5px) scale(1.02) rotate(0deg);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    animation-play-state: paused;
+}
+
+/* Floating + rotating animation */
+@keyframes floatRotate {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-5px) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateY(5px) rotate(1deg);
+    }
+
+    75% {
+        transform: translateY(-5px) rotate(-1deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+/* Button Styling with Glow */
+#admin-login .btn-primary {
+    background-color: #ffd700;
+    border-color: #ffd700;
+    color: #111;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    animation: glowPulse 2s infinite alternate;
+}
+
+#admin-login .btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 40px rgba(255, 215, 0, 0.6);
+    animation-play-state: paused;
+}
+
+/* Glow pulse animation */
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 215, 0, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    }
+}
+
+/* Input Styling */
+#admin-login input {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#admin-login input::placeholder {
+    color: #eee;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    #admin-login .card {
+        padding: 2rem 1.5rem;
+    }
+}

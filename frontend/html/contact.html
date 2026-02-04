@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Font: Playfair Display (stylish and elegant for bags) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/frontend/css/styles.css">
+    <link rel="stylesheet" href="/frontend/css/custom.css">
+    <link rel="stylesheet" href="/frontend/css/contact.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-order-cards" id="main-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">PAD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/frontend/html/index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/frontend/html/products.html">Notre Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/frontend/html/custom-order.html">Commandes personnalisées</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/frontend/html/about.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/frontend/html/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ 
+<section id="contact-hero" class="position-relative text-white py-5 custom-order-cards">
+    <!-- Parallax Background -->
+    <div class="contact-parallax-bg position-absolute top-0 start-0 w-100 h-100"></div>
+
+    <!-- Overlay -->
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+    <!-- Content -->
+    <div class="container position-relative text-center" style="z-index: 2;">
+        <h1 class="fw-bold display-5 mb-3" data-aos="fade-down">Get in Touch</h1>
+        <p class="lead mx-auto" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="100">
+            We’d love to hear from you. Whether it’s feedback, a question, or a custom order request —
+            our team is ready to help you make the perfect choice with PAD.
+        </p>
+        <a href="#contact-form" class="btn btn-warning mt-4 fw-bold px-4 py-2" data-aos="zoom-in" data-aos-delay="200">
+            Contact Us
+        </a>
+    </div>
+</section>
+
+
+<section id="contact-info" class="py-5 bg-dark text-white custom-order-cards">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4" data-aos="fade-down">Reach Us Easily</h2>
+        <p class="mb-5" data-aos="fade-up" style="max-width: 700px; margin: 0 auto;">
+            Whether you prefer to chat, call, or email — we’ve made it simple to connect with PAD.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Email Card -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card bg-transparent border-0 text-white h-100 shadow-lg p-4 rounded-4 contact-card">
+                    <div class="card-body">
+                        <i class="bi bi-envelope-fill fs-1 text-warning mb-3"></i>
+                        <h5 class="fw-bold">Email Us</h5>
+                        <p class="text-light">support@padbags.com</p>
+                        <a href="mailto:support@padbags.com" class="btn btn-outline-warning btn-sm mt-2">Send Email</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card bg-transparent border-0 text-white h-100 shadow-lg p-4 rounded-4 contact-card">
+                    <div class="card-body">
+                        <i class="bi bi-telephone-fill fs-1 text-warning mb-3"></i>
+                        <h5 class="fw-bold">Call Us</h5>
+                        <p class="text-light">+91 98765 43210</p>
+                        <a href="tel:+919876543210" class="btn btn-outline-warning btn-sm mt-2">Call Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WhatsApp Card -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card bg-transparent border-0 text-white h-100 shadow-lg p-4 rounded-4 contact-card">
+                    <div class="card-body">
+                        <i class="bi bi-whatsapp fs-1 text-success mb-3"></i>
+                        <h5 class="fw-bold">Chat on WhatsApp</h5>
+                        <p class="text-light">Get quick responses and updates.</p>
+                        <a href="https://wa.me/919876543210" target="_blank"
+                            class="btn btn-outline-success btn-sm mt-2">Chat Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact-form-section" class="py-5 position-relative text-white custom-order-cards">
+    <!-- Parallax Background -->
+    <div class="contact-parallax-bg position-absolute top-0 start-0 w-100 h-100"></div>
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+    <div class="container position-relative" style="z-index: 2;">
+        <div class="text-center mb-5" data-aos="fade-down">
+            <h2 class="fw-bold display-6">Send Us a Message</h2>
+            <p class="fs-5">We’d love to hear from you — whether it’s feedback, collaboration, or a custom order
+                inquiry.</p>
+        </div>
+
+        <form id="contactForm" class="mx-auto" style="max-width: 700px;" data-aos="fade-up">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control form-control-lg transparent-input" id="name"
+                        placeholder="Enter your name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control form-control-lg transparent-input" id="email"
+                        placeholder="Enter your email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control form-control-lg transparent-input" id="phone"
+                        placeholder="Enter your phone number">
+                </div>
+                <div class="col-md-6">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control form-control-lg transparent-input" id="subject"
+                        placeholder="What’s this about?" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control form-control-lg transparent-input" id="message" rows="5"
+                        placeholder="Type your message..." required></textarea>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-warning px-5 py-2 fw-semibold shadow-lg">Send Message</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <!-- Quick Connect Floating Icons -->
+<div id="quick-connect">
+    <a href="https://wa.me/+917337638491" class="qc-icon whatsapp" target="_blank" title="WhatsApp">
+        <i class="bi bi-whatsapp fs-2"></i>
+    </a>
+    <a href="tel:++917337638491" class="qc-icon call" title="Call">
+        <i class="bi bi-telephone fs-2"></i>
+    </a>
+    <a href="mailto:shop@example.com" class="qc-icon email" title="Email">
+        <i class="bi bi-envelope fs-2"></i>
+    </a>
+</div>
+    <footer id="site-footer" class="position-relative text-white custom-order-cards">
+        <!-- Parallax Background -->
+        <div class="footer-parallax-bg"></div>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row py-5">
+                <!-- About PAD -->
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">PAD</h5>
+                    <p class="text-white-50">PAD est votre destination boutique pour des sacs féminins élégants et
+                        premium. Explorez, achetez, et laissez-nous livrer
+                        l'élégance à votre porte.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Liens Rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#products" class="text-white-50 text-decoration-none">Notre Collection</a></li>
+                        <li><a href="#custom-order" class="text-white-50 text-decoration-none">Custom Orders</a></li>
+                        <li><a href="#contact" class="text-white-50 text-decoration-none">Contactez-nous</a></li>
+                        <li><a href="#about" class="text-white-50 text-decoration-none">À propos</a></li>
+                        <li><a href="/frontend/html/login.html" class="text-white-50 text-decoration-none">Admin</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold mb-3">Connectez-vous avec nous</h5>
+                    <p class="mb-2"><i class="bi bi-telephone me-2"></i> +123 456 7890</p>
+                    <p class="mb-2"><i class="bi bi-envelope me-2"></i> shop@pad.com</p>
+                    <div>
+                        <a href="https://wa.me/1234567890" class="text-white me-3 fs-5"><i
+                                class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center py-3 border-top border-white-25 mt-4">
+                <small class="text-white-50">&copy; 2025 PAD. Tous droits réservés.</small>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- AOS JS (at the end of body) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration in ms
+            once: true,     // only animate once
+        });
+    </script>
+    <script src="/frontend/script/contactForm.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+ <!-- Product 2 -->
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up">
+                <div class="card border-0 shadow-sm h-100 product-card">
+                    <div class="overflow-hidden rounded-3 position-relative">
+                        <img src="https://images.unsplash.com/photo-1591348278900-019a8a2a8b1d?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-img" alt="Elegant Tote Bag">
+                            <!-- Overlay details -->
+                            <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                                <p class="mb-2 text-white">Stylish & durable bag perfect for daily use.</p>
+                                <p class="mb-0 text-white"><strong>Material:</strong> Leather</p>
+                                <p class="mb-0 text-white"><strong>Color:</strong> Beige</p>
+                            </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-semibold mb-2">Elegant Tote Bag</h5>
+                        <p class="text-muted mb-1">$105.00</p>
+                        <button class="btn btn-primary btn-sm">Acheter Maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up">
+                <div class="card border-0 shadow-sm h-100 product-card">
+                    <div class="overflow-hidden rounded-3 position-relative">
+                        <img src="https://images.unsplash.com/photo-1634419446253-a1da206cf824?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-img" alt="Chic Shoulder Bag">
+                            <!-- Overlay details -->
+                            <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                                <p class="mb-2 text-white">Stylish & durable bag perfect for daily use.</p>
+                                <p class="mb-0 text-white"><strong>Material:</strong> Leather</p>
+                                <p class="mb-0 text-white"><strong>Color:</strong> Beige</p>
+                            </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-semibold mb-2">Chic Shoulder Bag</h5>
+                        <p class="text-muted mb-1">$95.00</p>
+                        <button class="btn btn-primary btn-sm">Acheter Maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up">
+                <div class="card border-0 shadow-sm h-100 product-card">
+                    <div class="overflow-hidden rounded-3 position-relative">
+                        <img src="https://images.unsplash.com/photo-1660695868393-c17c1e5c0fa1?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-img" alt="Mini Crossbody">
+                            <!-- Overlay details -->
+                            <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                                <p class="mb-2 text-white">Stylish & durable bag perfect for daily use.</p>
+                                <p class="mb-0 text-white"><strong>Material:</strong> Leather</p>
+                                <p class="mb-0 text-white"><strong>Color:</strong> Beige</p>
+                            </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-semibold mb-2">Mini Crossbody</h5>
+                        <p class="text-muted mb-1">$79.00</p>
+                        <button class="btn btn-primary btn-sm">Acheter Maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left">
+                <div class="card border-0 shadow-sm h-100 product-card">
+                    <div class="overflow-hidden rounded-3 position-relative">
+                        <img src="https://images.unsplash.com/photo-1630701875820-1250d036825d?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-img" alt="Mini Crossbody">
+                            <!-- Overlay details -->
+                            <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                                <p class="mb-2 text-white">Stylish & durable bag perfect for daily use.</p>
+                                <p class="mb-0 text-white"><strong>Material:</strong> Leather</p>
+                                <p class="mb-0 text-white"><strong>Color:</strong> Beige</p>
+                            </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-semibold mb-2">Mini Crossbody</h5>
+                        <p class="text-muted mb-1">$79.00</p>
+                        <button class="btn btn-primary btn-sm">Acheter Maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left">
+                <div class="card border-0 shadow-sm h-100 product-card">
+                    <div class="overflow-hidden rounded-3 position-relative">
+                        <img src="https://images.unsplash.com/photo-1751522984034-8b7a95aed182?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-img" alt="Mini Crossbody">
+                            <!-- Overlay details -->
+                            <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                                <p class="mb-2 text-white">Stylish & durable bag perfect for daily use.</p>
+                                <p class="mb-0 text-white"><strong>Material:</strong> Leather</p>
+                                <p class="mb-0 text-white"><strong>Color:</strong> Beige</p>
+                            </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-semibold mb-2">Mini Crossbody</h5>
+                        <p class="text-muted mb-1">$79.00</p>
+                        <button class="btn btn-primary btn-sm">Acheter Maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left">
+                <div class="card border-0 shadow-sm h-100 product-card">
+                    <div class="overflow-hidden rounded-3 position-relative">
+                        <img src="https://images.unsplash.com/photo-1657603513821-399e205022cd?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-img" alt="Mini Crossbody">
+                            <!-- Overlay details -->
+                            <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                                <p class="mb-2 text-white">Stylish & durable bag perfect for daily use.</p>
+                                <p class="mb-0 text-white"><strong>Material:</strong> Leather</p>
+                                <p class="mb-0 text-white"><strong>Color:</strong> Beige</p>
+                            </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-semibold mb-2">Mini Crossbody</h5>
+                        <p class="text-muted mb-1">$79.00</p>
+                        <button class="btn btn-primary btn-sm">Acheter Maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left">
+                <div class="card border-0 shadow-sm h-100 product-card">
+                    <div class="overflow-hidden rounded-3 position-relative">
+                        <img src="https://images.unsplash.com/photo-1682031215004-161c99d5b225?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-img" alt="Mini Crossbody">
+                            <!-- Overlay details -->
+                            <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                                <p class="mb-2 text-white">Stylish & durable bag perfect for daily use.</p>
+                                <p class="mb-0 text-white"><strong>Material:</strong> Leather</p>
+                                <p class="mb-0 text-white"><strong>Color:</strong> Beige</p>
+                            </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-semibold mb-2">Mini Crossbody</h5>
+                        <p class="text-muted mb-1">$79.00</p>
+                        <button class="btn btn-primary btn-sm">Acheter Maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+ <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up">
+                <div class="card border-0 shadow-sm h-100 product-card">
+                    <div class="overflow-hidden rounded-3 position-relative">
+                        <img src="https://images.unsplash.com/photo-1664151101806-b5ce45e37fb1?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-img" alt="Classic Leather Handbag">
+                            <!-- Overlay details -->
+                            <div class="card-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                                <p class="mb-2 text-white">Stylish & durable bag perfect for daily use.</p>
+                                <p class="mb-0 text-white"><strong>Material:</strong> Leather</p>
+                                <p class="mb-0 text-white"><strong>Color:</strong> Beige</p>
+                            </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-semibold mb-2">Classic Leather Handbag</h5>
+                        <p class="text-muted mb-1">$89.00</p>
+                        <button class="btn btn-primary btn-sm">Acheter Maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Product Card -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card border-0 shadow-sm h-100 text-center">
+                    <div class="product-img-wrapper overflow-hidden rounded-3">
+                        <img src="https://images.unsplash.com/photo-1682031215004-161c99d5b225?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-img" alt="Mini Crossbody">
+                        <div class="product-overlay">
+                            <p class="text-white small mb-0">Compact and stylish. Perfect for your essentials.</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="fw-semibold mb-2 text-white">Mini Crossbody</h5>
+                        <p class="text-white mb-1">$79.00</p>
+                        <button class="btn btn-primary btn-sm">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat Product Cards -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card border-0 shadow-sm h-100 text-center">
+                    <div class="product-img-wrapper overflow-hidden rounded-3">
+                        <img src="https://images.unsplash.com/photo-1591348278900-019a8a2a8b1d?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-img" alt="Leather Tote">
+                        <div class="product-overlay">
+                            <p class="text-white small mb-0">Elegant leather tote for every occasion.</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="fw-semibold mb-2 text-white">Leather Tote</h5>
+                        <p class="text-white mb-1">$129.00</p>
+                        <button class="btn btn-primary btn-sm">Buy Now</button>
+                    </div>
+                </div>
+            </div>

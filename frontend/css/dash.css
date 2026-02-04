@@ -1,0 +1,224 @@
+#admin-navbar {
+    background: linear-gradient(90deg, #111, #222);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#admin-navbar .nav-link {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#admin-navbar .nav-link:hover,
+#admin-navbar .nav-link.active {
+    color: #ffd700;
+    transform: translateY(-2px);
+}
+
+#admin-navbar .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#admin-navbar .btn-outline-light:hover {
+    background-color: #ffd700;
+    color: #111;
+    border-color: #ffd700;
+}
+
+
+
+
+
+
+
+/* Parallax Background */
+.products-parallax-bg {
+    background-image: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1400&q=80');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Overlay */
+#products-section .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+/* Hover effect on cards */
+.hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Form Inputs */
+#product-upload-form .form-control {
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#product-upload-form .form-control:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    outline: none;
+}
+
+/* Button hover */
+#product-upload-form .btn-warning {
+    background-color: #ffd700;
+    border-color: #ffd700;
+    color: #111;
+    transition: transform 0.3s ease;
+}
+
+#product-upload-form .btn-warning:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+#admin-forms-header {
+    background: linear-gradient(90deg, #111, #222);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+#admin-forms-header h2 {
+    letter-spacing: 1.5px;
+}
+
+#admin-forms-header p {
+    color: #ccc;
+}
+
+
+
+
+
+
+
+#admin-forms-filter .form-control,
+#admin-forms-filter .form-select {
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#admin-forms-filter .form-control:focus,
+#admin-forms-filter .form-select:focus {
+    border-color: #ffd700;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+#admin-forms-filter .btn-primary {
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    background-color: #ffd700;
+    color: #111;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+#admin-forms-filter .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Parallax Background */
+.forms-parallax-bg {
+    background-image: url('https://images.unsplash.com/photo-1536584754829-12214d404f32?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE5fHxiYWdzfGVufDB8MHwwfHx8MA%3D%3D&?auto=format&fit=crop&w=1400&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Overlay */
+#admin-forms-list .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+/* Card Fun Hover Effects */
+.fun-card {
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+}
+
+.fun-card:hover {
+    transform: translateY(-10px) rotate(-1deg) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(145deg, #222, #333);
+}
+
+/* Button Styling */
+.fun-card .btn-sm {
+    border-radius: 25px;
+    padding: 0.4rem 1rem;
+    transition: transform 0.3s ease;
+}
+
+.fun-card .btn-sm:hover {
+    transform: scale(1.1) rotate(-1deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #admin-forms-list .row {
+        justify-content: center;
+    }
+}
+
+
+/* Optional Image Preview */
+.image-preview img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-preview img:hover {
+    transform: scale(1.05);
+}

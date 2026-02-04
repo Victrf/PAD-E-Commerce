@@ -1,0 +1,322 @@
+/* Navbar Background with Image */
+#main-navbar {
+    background-image: url('https://images.unsplash.com/photo-1679466230930-4c53a8f0a699?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE1fHxiYWdzfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: brightness(0.6);
+    /* dark overlay for text readability */
+    transition: background 0.5s ease;
+}
+
+/* Navbar brand styling */
+#main-navbar .navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+    /* brand text white */
+}
+
+/* Navbar links */
+#main-navbar .nav-link {
+    font-weight: 500;
+    color: #ffffff;
+    /* links white */
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for links */
+#main-navbar .nav-link:hover {
+    color: #ffd700;
+    /* gold accent */
+    transform: translateY(-3px);
+    /* slight lift */
+}
+
+/* Active link */
+#main-navbar .nav-link.active {
+    color: #ffd700;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    #main-navbar {
+        background-position: center top;
+    }
+
+    #main-navbar .nav-link {
+        margin: 0.3rem 0;
+    }
+}
+/* White border for hamburger button */
+.navbar-dark .navbar-toggler {
+    background-color: transparent;
+    /* keep button background transparent */
+    border: 2px solid #ffffff;
+    /* white border */
+    border-radius: 0.25rem;
+    /* rounded corners */
+    padding: 0.25rem 0.5rem;
+    /* adjust size if needed */
+}
+
+/* White hamburger lines inside the bordered container */
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+#hero-carousel img {
+    transition: transform 1.5s ease;
+}
+
+#hero-carousel .carousel-item.active img {
+    transform: scale(1.05);
+}
+
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.08);
+}
+.product-img {
+    height: 250px;
+    /* fixed height for all cards */
+    object-fit: cover;
+    /* crops without stretching */
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.08);
+}
+.product-img {
+    min-height: 250px;
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.parallax-bg {
+    background-image: url('https://images.unsplash.com/photo-1607083205410-7e6835ffd235?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTg1fHxiYWdzfGVufDB8MHwwfHx8MA%3D%3D&?auto=format&fit=crop&w=1400&q=80');
+    background-attachment: fixed;
+    /* parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.6);
+    z-index: 1;
+}
+
+/* Overlay initially hidden */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* semi-transparent dark overlay */
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* allows button clicks below overlay */
+    border-radius: 0.75rem;
+    /* matches image rounding */
+}
+
+/* Show overlay on hover */
+.product-card:hover .card-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Keep image zoom on hover */
+.product-card:hover .product-img {
+    transform: scale(1.08);
+}
+
+
+
+
+/* Parallax Background */
+/* .custom-parallax-bg {
+    background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFnc3xlbnwwfDB8MHx8fDA%3D&?auto=format&fit=crop&w=1400&q=80');
+    
+    background-attachment: fixed;
+    parallax scroll
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.65);
+    dims background for readability
+    z-index: 1;
+} */
+
+
+.custom-parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ensures video covers section */
+    z-index: 1;
+    filter: brightness(0.6);
+    /* darken video for readability */
+    pointer-events: none;
+    /* ensures user can interact with content */
+}
+/* Hover scale effect for cards */
+.hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional gradient overlay (if you want to add soft pastel effect) */
+#custom-order::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 230, 240, 0.4), rgba(255, 240, 245, 0.4));
+    z-index: 1;
+}
+
+
+/* Apply the new font to only this section */
+.custom-order-cards {
+    font-family: 'Playfair Display', serif;
+}
+
+.custom-order-cards h5 {
+    font-weight: 700;
+    /* bold heading */
+}
+
+.custom-order-cards p {
+    font-weight: 400;
+    /* normal paragraph */
+}
+
+/* Footer Parallax Background */
+.footer-parallax-bg {
+    background-image: url('https://images.unsplash.com/photo-1634566761234-71d1e7719b61?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGJhZ3N8ZW58MHwwfDB8fHww&?auto=format&fit=crop&w=1400&q=80');
+    /* replace with your choice */
+    background-attachment: fixed;
+    /* parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4);
+    /* dim for readability */
+    z-index: 1;
+}
+
+/* Footer Links */
+#site-footer a {
+    transition: color 0.3s;
+}
+
+#site-footer a:hover {
+    color: #ffd700;
+    /* gold accent on hover */
+    text-decoration: underline;
+}
+
+/* Responsive spacing */
+#site-footer p,
+#site-footer ul li {
+    font-size: 0.95rem;
+}
+
+/* Optional: smooth fade-in animation for footer */
+#site-footer {
+    animation: fadeInFooter 1.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInFooter {
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Quick Links */
+#site-footer ul li a {
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#site-footer ul li a:hover {
+    color: #ffd700;
+    /* gold accent */
+    transform: translateX(5px);
+    /* slight slide effect */
+}
+
+/* Optional underline animation */
+#site-footer ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffd700;
+    transition: width 0.3s;
+}
+
+#site-footer ul li a:hover::after {
+    width: 100%;
+}
+/* Social Media Icons */
+#site-footer a.fs-5 i {
+    transition: transform 0.3s, color 0.3s;
+}
+
+#site-footer a.fs-5:hover i {
+    transform: scale(1.2);
+    color: #ffd700;
+    /* gold accent */
+}
+
+/* Optional: add a smooth cursor pointer for icons */
+#site-footer a.fs-5 {
+    cursor: pointer;
+}

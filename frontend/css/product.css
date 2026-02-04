@@ -1,0 +1,498 @@
+/* Product Page Hero Section */
+.product-hero {
+    background-image: url('https://images.unsplash.com/photo-1657603513821-399e205022cd?auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Parallax effect */
+    min-height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.product-hero .container {
+    z-index: 2;
+}
+
+.product-hero h1,
+.product-hero p {
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Filter & Sort Bar */
+#filter-sort-bar {
+    background: linear-gradient(90deg, #111, #222);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(6px);
+}
+
+/* Inputs and Selects */
+#filter-sort-bar input,
+#filter-sort-bar select {
+    border-radius: 30px;
+    padding: 0.6rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+    appearance: none;
+}
+
+/* Dropdown styling */
+#filter-sort-bar select {
+    background-color: rgba(30, 30, 30, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg fill='%23FFD700' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+}
+
+/* Dropdown options */
+#filter-sort-bar select option {
+    background-color: #111;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+#filter-sort-bar select option:hover {
+    background: #ffd700;
+    color: #111;
+}
+
+/* Animate dropdown open (modern browsers) */
+#filter-sort-bar select:focus {
+    border-color: #ffd700;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    animation: dropdown-open 0.3s ease;
+}
+
+/* Keyframe for subtle slide + fade */
+@keyframes dropdown-open {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Placeholder styling */
+#filter-sort-bar input::placeholder {
+    color: #ccc;
+}
+
+/* Labels */
+#filter-sort-bar label {
+    font-weight: 500;
+    color: #ffd700;
+}
+
+/* Price Value Display */
+#filter-sort-bar #priceValue {
+    color: #ffd700;
+    font-weight: 600;
+}
+
+/* Range slider custom look */
+#filter-sort-bar input[type="range"]::-webkit-slider-thumb {
+    background-color: #ffd700;
+    border: 2px solid white;
+}
+
+#filter-sort-bar input[type="range"] {
+    accent-color: #ffd700;
+}
+
+/* Hover interaction for select and inputs */
+#filter-sort-bar input:hover,
+#filter-sort-bar select:hover {
+    border-color: #ffd700;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #filter-sort-bar .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+
+
+
+/* Parallax Background for Products Section */
+.parallax-product-bg {
+    background-image: url('https://images.unsplash.com/photo-1525103504173-8dc1582c7430?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJhZ3N8ZW58MHwwfDB8fHww&?auto=format&fit=crop&w=1600&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Product Cards */
+.product-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3);
+}
+
+/* Uniform Image Height */
+.product-img {
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Image Hover Zoom */
+.product-card:hover .product-img {
+    transform: scale(1.1);
+}
+
+/* Overlay Details on Hover */
+.product-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    padding: 1rem;
+}
+
+.product-img-wrapper {
+    position: relative;
+}
+
+.product-img-wrapper:hover .product-overlay {
+    opacity: 1;
+}
+
+/* Buy Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ffd700;
+    color: #111;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .product-img {
+        height: 220px;
+    }
+}
+
+
+
+
+
+
+
+/* Testimonials Section */
+#testimonials {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=80');
+    background-attachment: fixed;
+    /* parallax effect */
+    background-position: center;
+    background-size: cover;
+    padding: 5rem 0;
+    color: white;
+}
+
+/* Overlay to make text readable */
+#testimonials::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+/* Container content on top of overlay */
+#testimonials .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Section title styling */
+#testimonials h2 {
+    color: #ffd700;
+    /* gold accent */
+    letter-spacing: 2px;
+}
+
+/* Carousel card styling */
+#testimonials .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* semi-transparent */
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Card hover effect */
+#testimonials .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Card text styling */
+#testimonials .card-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Customer name and small text */
+#testimonials h6 {
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+#testimonials small {
+    color: #f0e68c;
+    /* light gold */
+}
+
+/* Carousel controls */
+#testimonialCarousel .carousel-control-prev-icon,
+#testimonialCarousel .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    #testimonials h2 {
+        font-size: 1.8rem;
+    }
+
+    #testimonials .card {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    #testimonials {
+        padding: 3rem 0;
+    }
+
+    #testimonials .card-text {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+/* Custom Order Section */
+#custom-order {
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Parallax Video */
+.custom-parallax-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.6);
+}
+
+/* Overlay for better readability */
+#custom-order .overlay {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Button Hover Effect */
+#custom-order .btn:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #custom-order h2 {
+        font-size: 1.8rem;
+    }
+
+    #custom-order p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+/* Why Choose Us Parallax Background */
+.why-parallax-bg {
+    background-image: url('https://images.unsplash.com/photo-1523779105320-d1cd346ff52b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJhZ3N8ZW58MHwwfDB8fHww&?auto=format&fit=crop&w=1400&q=80');
+    background-attachment: fixed;
+    /* Parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    filter: brightness(0.6);
+}
+
+/* Overlay */
+#why-choose-us .overlay {
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Hover scale effect for cards */
+.hover-scale {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-scale:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #why-choose-us h2 {
+        font-size: 1.8rem;
+    }
+
+    #why-choose-us p {
+        font-size: 1rem;
+    }
+}
+/* .bi {
+    font-family: "bootstrap-icons" !important;
+} */
+
+
+
+
+
+
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 3rem;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    animation: bounce 2s infinite;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Bounce animation */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
